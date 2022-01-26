@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/infoGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="tvPassword,btnHideInfo,tvFullName,tvUserName,tvGender,tvEmail" />
+
+    <TextView
+        android:id="@+id/tvFullName"
+        android:layout_width="313dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/textview_style"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="313dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/textview_style"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFullName" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="313dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/textview_style"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="313dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/textview_style"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="313dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/textview_style"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
+
+
+    <Button
+        android:id="@+id/btnHideInfo"
+        android:layout_width="313dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/hide_info"
+        android:textAllCaps="false"
+        app:backgroundTint="#F321EF"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGender"
+        tools:ignore="TextContrastCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
