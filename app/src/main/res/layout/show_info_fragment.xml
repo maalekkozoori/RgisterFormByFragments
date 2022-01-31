@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="visible"
-        app:constraint_referenced_ids="tvPassword,btnHideInfo,tvFullName,tvUserName,tvGender,tvEmail" />
+        app:constraint_referenced_ids="tvPassword,btnSave,tvFullName,tvUserName,tvGender,tvEmail" />
 
     <TextView
         android:id="@+id/tvFullName"
@@ -79,11 +79,11 @@
 
 
     <Button
-        android:id="@+id/btnHideInfo"
+        android:id="@+id/btnSave"
         android:layout_width="313dp"
         android:layout_height="50dp"
         android:layout_marginTop="28dp"
-        android:text="@string/hide_info"
+        android:text="Save"
         android:textAllCaps="false"
         app:backgroundTint="#F321EF"
         app:cornerRadius="20dp"

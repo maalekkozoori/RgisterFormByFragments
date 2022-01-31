@@ -12,10 +12,24 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if (savedInstanceState == null) {
-            supportFragmentManager.commit {
-                add<RegisterFragment>(R.layout.register_fragment)
-            }
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        supportFragmentManager.commit {
+            setReorderingAllowed(true)
+            add<RegisterFragment>(R.id.container1)
+
+        }
+
+
+
+
+
+    }
+
+    fun goToShowInfoFragment(){
+        supportFragmentManager.commit {
+            setReorderingAllowed(true)
+            add<ShowInfoFragment>(R.id.container1)
         }
     }
 }
